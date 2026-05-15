@@ -1898,6 +1898,94 @@
 </style>
 </head>
 <body>
+
+<!-- ====== ACCESS GATE ====== -->
+<div id="access-gate" style="position:fixed;inset:0;z-index:99999;background:#0f172a;display:flex;align-items:center;justify-content:center;font-family:'Cairo','Segoe UI',sans-serif">
+  <div style="background:#1e293b;border:1px solid #334155;border-radius:16px;padding:2.5rem;max-width:420px;width:90%;text-align:center;box-shadow:0 25px 60px rgba(0,0,0,.5)">
+    <div style="font-size:3rem;margin-bottom:.5rem">&#x1F512;</div>
+    <h2 style="color:#e2e8f0;font-size:1.4rem;margin:0 0 .3rem">محتوى محمي</h2>
+    <p style="color:#94a3b8;font-size:.9rem;margin:0 0 1.5rem">أدخل رمز الوصول للدخول إلى الدورة</p>
+    <input id="gate-code" type="password" placeholder="Access Code" autocomplete="off"
+      style="width:100%;padding:.8rem 1rem;border:2px solid #334155;border-radius:8px;background:#0f172a;color:#e2e8f0;font-size:1rem;text-align:center;outline:none;font-family:monospace;letter-spacing:2px"
+      onfocus="this.style.borderColor='#3b82f6'" onblur="this.style.borderColor='#334155'"/>
+    <button onclick="checkGateCode()" style="width:100%;margin-top:1rem;padding:.8rem;background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;font-family:'Cairo',sans-serif">
+      دخول
+    </button>
+    <p id="gate-error" style="color:#ef4444;font-size:.85rem;margin:.8rem 0 0;display:none">رمز الوصول غير صحيح</p>
+    <p style="color:#475569;font-size:.75rem;margin-top:1.2rem">© Eng. Mustafa Al-Qadi</p>
+  </div>
+</div>
+
+<!-- ====== WATERMARK OVERLAY ====== -->
+<div id="watermark-overlay" style="position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:.04;display:none;overflow:hidden">
+</div>
+
+<script>
+(function(){
+  // --- Access Gate ---
+  var HASH = '6a7b8c9d'; // SHA fragment of TOGAFOGEA-101-2026
+  function simpleHash(s){var h=0;for(var i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return Math.abs(h).toString(16).slice(0,8);}
+  var VALID = simpleHash('TOGAFOGEA-101-2026');
+
+  window.checkGateCode = function(){
+    var input = document.getElementById('gate-code').value.trim();
+    if(simpleHash(input) === VALID){
+      sessionStorage.setItem('course-access','granted');
+      document.getElementById('access-gate').style.display='none';
+      document.body.style.overflow='';
+      showWatermark(input);
+    } else {
+      var err = document.getElementById('gate-error');
+      err.style.display='block';
+      document.getElementById('gate-code').style.borderColor='#ef4444';
+      setTimeout(function(){ err.style.display='none'; document.getElementById('gate-code').style.borderColor='#334155'; },2000);
+    }
+  };
+  document.addEventListener('keydown',function(e){ if(e.key==='Enter' && document.getElementById('access-gate').style.display!=='none') checkGateCode(); });
+
+  // Auto-unlock if already authenticated this session
+  if(sessionStorage.getItem('course-access')==='granted'){
+    document.getElementById('access-gate').style.display='none';
+    showWatermark('');
+  } else {
+    document.body.style.overflow='hidden';
+  }
+
+  // --- Watermark ---
+  function showWatermark(code){
+    var wm = document.getElementById('watermark-overlay');
+    if(!wm) return;
+    var txt = code || 'Protected Content';
+    var html = '';
+    for(var i=0;i<80;i++){
+      var top = (i*3.5)%100;
+      var left = ((i*17.3)%100);
+      var rot = -25 + (i%3)*10;
+      html += '<div style="position:absolute;top:'+top+'%;left:'+left+'%;transform:rotate('+rot+'deg);font-size:14px;color:#000;white-space:nowrap;font-family:monospace">'+txt+'</div>';
+    }
+    wm.innerHTML = html;
+    wm.style.display='block';
+  }
+
+  // --- Anti-Copy / Print / Right-Click ---
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+  document.addEventListener('keydown', function(e){
+    // Ctrl+S, Ctrl+U, Ctrl+Shift+I, Ctrl+P, F12
+    if((e.ctrlKey || e.metaKey) && (e.key==='s'||e.key==='S'||e.key==='u'||e.key==='U'||e.key==='p'||e.key==='P')){ e.preventDefault(); }
+    if((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key==='I'||e.key==='i'||e.key==='J'||e.key==='j')){ e.preventDefault(); }
+    if(e.key==='F12'){ e.preventDefault(); }
+  });
+  document.addEventListener('copy', function(e){ e.preventDefault(); });
+  document.addEventListener('cut', function(e){ e.preventDefault(); });
+
+  // CSS: disable selection + print
+  var pStyle = document.createElement('style');
+  pStyle.textContent = '@media print{body{display:none!important}} body.no-select{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}';
+  document.head.appendChild(pStyle);
+  document.body.classList.add('no-select');
+})();
+</script>
+
 <button class="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Toggle menu">☰</button>
 
 <header class="toolbar">
