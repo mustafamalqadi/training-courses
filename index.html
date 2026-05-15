@@ -3,116 +3,259 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Training Courses — Mustafa Al-Qadi</title>
+<title>Eng. Mustafa Al-Qadi — Professional Training Courses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#0f172a;--surface:#1e293b;--border:#334155;
-  --text:#e2e8f0;--muted:#94a3b8;--accent:#3b82f6;--accent2:#8b5cf6;
-  --card-hover:#263348;--green:#22c55e;
+  --bg:#090d1a;--bg2:#0d1225;--surface:#131a2e;--surface2:#1a2340;
+  --border:#1e2a45;--border-hover:#3b82f6;
+  --text:#e8ecf4;--text2:#c8d0e0;--muted:#6b7a99;
+  --accent:#3b82f6;--accent2:#8b5cf6;--accent3:#06b6d4;
+  --green:#10b981;--amber:#f59e0b;--rose:#f43f5e;
+  --glow:rgba(59,130,246,.12);--glow2:rgba(139,92,246,.08);
 }
-body{font-family:'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+body{font-family:'Cairo','Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.7;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 
+/* Animated BG */
+.bg-pattern{position:fixed;inset:0;z-index:0;opacity:.4;
+  background:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(59,130,246,.15),transparent),
+             radial-gradient(ellipse 60% 40% at 80% 80%,rgba(139,92,246,.1),transparent);
+}
+
+/* Top Bar */
+.topbar{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;border-bottom:1px solid var(--border);backdrop-filter:blur(12px);background:rgba(9,13,26,.7)}
+.topbar-brand{display:flex;align-items:center;gap:.8rem}
+.topbar-logo{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;color:#fff;font-family:'Inter',sans-serif}
+.topbar-name{font-weight:700;font-size:1rem;color:var(--text)}
+.topbar-title{font-size:.75rem;color:var(--muted);font-weight:400}
+.topbar-stats{display:flex;gap:1.5rem}
+.stat{text-align:center}
+.stat-num{font-size:1.1rem;font-weight:800;color:var(--accent);font-family:'Inter',sans-serif}
+.stat-label{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+
 /* Hero */
-.hero{text-align:center;padding:4rem 1.5rem 3rem;background:linear-gradient(135deg,#1e293b 0%,#0f172a 50%,#1a1a2e 100%);border-bottom:1px solid var(--border)}
-.hero h1{font-size:2.2rem;font-weight:700;margin-bottom:.5rem;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero p{color:var(--muted);font-size:1.1rem;max-width:600px;margin:0 auto}
-.badge{display:inline-block;background:var(--accent);color:#fff;font-size:.75rem;padding:.2rem .7rem;border-radius:999px;margin-top:.8rem}
+.hero{position:relative;z-index:1;text-align:center;padding:5rem 2rem 4rem;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.2);padding:.35rem 1rem;border-radius:999px;font-size:.8rem;color:var(--accent);margin-bottom:1.5rem;backdrop-filter:blur(8px)}
+.hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:2.8rem;font-weight:900;margin-bottom:.8rem;letter-spacing:-.5px}
+.hero h1 .gradient{background:linear-gradient(135deg,var(--accent),var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:650px;margin:0 auto;line-height:1.8}
+
+/* Section */
+.container{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:3rem 2rem}
+.section-header{display:flex;align-items:center;gap:1rem;margin-bottom:2rem}
+.section-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.section-icon.blue{background:rgba(59,130,246,.12);color:var(--accent)}
+.section-icon.amber{background:rgba(245,158,11,.12);color:var(--amber)}
+.section-label{font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);font-weight:600}
+.section-title{font-size:1.4rem;font-weight:700;color:var(--text)}
 
 /* Grid */
-.container{max-width:1100px;margin:0 auto;padding:2rem 1.5rem}
-.section-title{font-size:1.3rem;color:var(--muted);margin-bottom:1.5rem;border-right:3px solid var(--accent);padding-right:.8rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.5rem}
 
 /* Card */
-.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.8rem;transition:all .25s ease;position:relative;overflow:hidden}
-.card:hover{background:var(--card-hover);border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 30px rgba(59,130,246,.15)}
-.card::before{content:'';position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));opacity:0;transition:opacity .25s}
-.card:hover::before{opacity:1}
-.card-icon{font-size:2.2rem;margin-bottom:.8rem}
-.card h3{font-size:1.15rem;font-weight:600;margin-bottom:.4rem}
-.card .desc{color:var(--muted);font-size:.9rem;margin-bottom:1rem}
-.card .meta{display:flex;gap:1rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
-.card .meta span{display:flex;align-items:center;gap:.3rem}
-.tag{display:inline-block;background:rgba(59,130,246,.15);color:var(--accent);font-size:.7rem;padding:.15rem .5rem;border-radius:4px;margin-left:.3rem}
-.tag.purple{background:rgba(139,92,246,.15);color:var(--accent2)}
-.tag.green{background:rgba(34,197,94,.15);color:var(--green)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:0;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.card:hover{border-color:var(--border-hover);transform:translateY(-4px);box-shadow:0 20px 60px rgba(59,130,246,.12),0 1px 3px rgba(0,0,0,.2)}
+.card-top{height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.card-body{padding:1.8rem 1.8rem 1.5rem;flex:1}
+.card-header{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem}
+.card-icon-wrap{width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.card-icon-wrap.teal{background:rgba(6,182,212,.12)}
+.card-icon-wrap.purple{background:rgba(139,92,246,.12)}
+.card-icon-wrap.blue{background:rgba(59,130,246,.12)}
+.card-icon-wrap.green{background:rgba(16,185,129,.12)}
+.card h3{font-size:1.15rem;font-weight:700;margin-bottom:.2rem;line-height:1.4}
+.card .subtitle{font-size:.8rem;color:var(--muted);font-weight:400}
+.card .desc{color:var(--text2);font-size:.9rem;margin-bottom:1.2rem;line-height:1.7}
+.card-footer{padding:1rem 1.8rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,.15)}
+.card-tags{display:flex;gap:.4rem;flex-wrap:wrap}
+.tag{font-size:.68rem;padding:.2rem .6rem;border-radius:6px;font-weight:600;letter-spacing:.3px}
+.tag.blue{background:rgba(59,130,246,.12);color:var(--accent)}
+.tag.purple{background:rgba(139,92,246,.12);color:var(--accent2)}
+.tag.teal{background:rgba(6,182,212,.12);color:var(--accent3)}
+.tag.green{background:rgba(16,185,129,.15);color:var(--green)}
+.tag.amber{background:rgba(245,158,11,.12);color:var(--amber)}
+.card-status{font-size:.75rem;font-weight:600;display:flex;align-items:center;gap:.4rem}
+.card-status.live{color:var(--green)}
+.card-status.soon{color:var(--amber)}
+.dot-live{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+.dot-soon{width:7px;height:7px;border-radius:50%;background:var(--amber);opacity:.6}
 
-/* Coming Soon */
-.coming{opacity:.45;pointer-events:none}
-.coming .card{border-style:dashed}
+/* Coming Soon overlay */
+.coming .card{opacity:.55}
+.coming .card:hover{transform:none;box-shadow:none;border-color:var(--border)}
 
 /* Footer */
-footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);margin-top:3rem}
+footer{position:relative;z-index:1;border-top:1px solid var(--border);margin-top:4rem;padding:2.5rem 2rem;text-align:center}
+.footer-brand{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
+.footer-role{font-size:.85rem;color:var(--muted);margin-bottom:1rem}
+.footer-copy{font-size:.75rem;color:var(--muted);opacity:.6}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1rem}
+.footer-links a{color:var(--muted);font-size:.82rem;transition:color .2s}
+.footer-links a:hover{color:var(--accent)}
 
-@media(max-width:600px){
-  .hero h1{font-size:1.6rem}
+@media(max-width:700px){
+  .hero h1{font-size:1.8rem}
   .grid{grid-template-columns:1fr}
+  .topbar{flex-direction:column;gap:.8rem;text-align:center}
+  .topbar-stats{gap:1rem}
+  .container{padding:2rem 1rem}
 }
 </style>
 </head>
 <body>
 
+<div class="bg-pattern"></div>
+
+<!-- Top Bar -->
+<nav class="topbar">
+  <div class="topbar-brand">
+    <div class="topbar-logo">MA</div>
+    <div>
+      <div class="topbar-name">Eng. Mustafa Al-Qadi</div>
+      <div class="topbar-title">Enterprise Architecture &amp; Cloud Training</div>
+    </div>
+  </div>
+  <div class="topbar-stats">
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Course Live</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Coming Soon</div></div>
+  </div>
+</nav>
+
+<!-- Hero -->
 <header class="hero">
-  <h1>&#x1F393; Training Courses</h1>
-  <p>دورات تدريبية احترافية باللغة العربية — Enterprise Architecture, FinOps, Cloud &amp; More</p>
-  <span class="badge">Instructor-Led &bull; Arabic</span>
+  <div class="hero-eyebrow"><span class="dot"></span> Instructor-Led &bull; Arabic Content</div>
+  <h1><span class="gradient">Professional Training</span><br/>Courses</h1>
+  <p>دورات تدريبية احترافية باللغة العربية في هندسة المؤسسات والبنية التحتية السحابية — محتوى تفاعلي مع اختبارات تجريبية</p>
 </header>
 
+<!-- Available Courses -->
 <main class="container">
 
-  <h2 class="section-title">الدورات المتاحة</h2>
+  <div class="section-header">
+    <div class="section-icon blue">&#x1F4DA;</div>
+    <div>
+      <div class="section-label">Available Now</div>
+      <div class="section-title">الدورات المتاحة</div>
+    </div>
+  </div>
+
   <div class="grid">
 
     <a href="courses/TOGAF-EA-Foundation-Instructor-Course.html" class="card">
-      <div class="card-icon">&#x1F3DB;&#xFE0F;</div>
-      <h3>TOGAF EA Foundation</h3>
-      <p class="desc">أساسيات هندسة المؤسسات — TOGAF 10 Standard. يغطي ADM، المبادئ، الأطر، والحوكمة. مع اختبار تجريبي.</p>
-      <div class="meta">
-        <span>&#x1F4D6; Instructor Course</span>
-        <span>&#x23F1; ~40 ساعة محتوى</span>
+      <div class="card-top"></div>
+      <div class="card-body">
+        <div class="card-header">
+          <div class="card-icon-wrap teal">&#x1F3DB;&#xFE0F;</div>
+          <div>
+            <h3>TOGAF EA Foundation</h3>
+            <div class="subtitle">OGEA-101 &mdash; The Open Group</div>
+          </div>
+        </div>
+        <p class="desc">أساسيات هندسة المؤسسات وفق معيار TOGAF 10. يغطي ADM، المبادئ، الأطر المعمارية، والحوكمة. يشمل اختبار تجريبي تفاعلي وملخص سريع.</p>
       </div>
-      <div style="margin-top:.8rem">
-        <span class="tag">TOGAF 10</span>
-        <span class="tag purple">Enterprise Architecture</span>
-        <span class="tag green">&#x2713; متاح</span>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="tag blue">TOGAF 10</span>
+          <span class="tag purple">Enterprise Architecture</span>
+        </div>
+        <div class="card-status live"><span class="dot-live"></span> متاح</div>
       </div>
     </a>
 
   </div>
 
-  <!-- Future courses placeholder -->
-  <h2 class="section-title" style="margin-top:3rem">قريباً</h2>
+  <!-- Coming Soon -->
+  <div class="section-header" style="margin-top:3.5rem">
+    <div class="section-icon amber">&#x1F680;</div>
+    <div>
+      <div class="section-label">Coming Soon</div>
+      <div class="section-title">قريباً</div>
+    </div>
+  </div>
+
   <div class="grid coming">
 
     <div class="card">
-      <div class="card-icon">&#x1F4B0;</div>
-      <h3>IT Financial Management &amp; FinOps</h3>
-      <p class="desc">إدارة التكاليف المالية لتقنية المعلومات — TBM, FinOps, Cloud Cost Optimization</p>
-      <div class="meta"><span>&#x1F6A7; قيد التطوير</span></div>
+      <div class="card-top" style="background:linear-gradient(90deg,var(--accent3),var(--green))"></div>
+      <div class="card-body">
+        <div class="card-header">
+          <div class="card-icon-wrap green">&#x1F4BE;</div>
+          <div>
+            <h3>VCF 9 &mdash; Storage Fundamentals</h3>
+            <div class="subtitle">VMware Cloud Foundation 9</div>
+          </div>
+        </div>
+        <p class="desc">أساسيات التخزين في بيئة VMware Cloud Foundation 9 — vSAN، NFS، iSCSI، Storage Policies، وأفضل الممارسات.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="tag teal">VCF 9</span>
+          <span class="tag green">Storage</span>
+        </div>
+        <div class="card-status soon"><span class="dot-soon"></span> قريباً</div>
+      </div>
     </div>
 
     <div class="card">
-      <div class="card-icon">&#x2601;&#xFE0F;</div>
-      <h3>VCF 9 — Compute Fundamentals</h3>
-      <p class="desc">أساسيات الحوسبة في VMware Cloud Foundation 9</p>
-      <div class="meta"><span>&#x1F6A7; قيد التطوير</span></div>
+      <div class="card-top" style="background:linear-gradient(90deg,var(--accent),var(--accent3))"></div>
+      <div class="card-body">
+        <div class="card-header">
+          <div class="card-icon-wrap blue">&#x2601;&#xFE0F;</div>
+          <div>
+            <h3>VCF 9 &mdash; Compute Fundamentals</h3>
+            <div class="subtitle">VMware Cloud Foundation 9</div>
+          </div>
+        </div>
+        <p class="desc">أساسيات الحوسبة في VMware Cloud Foundation 9 — ESXi، vCenter، Clusters، DRS، HA، وإدارة الموارد.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="tag teal">VCF 9</span>
+          <span class="tag blue">Compute</span>
+        </div>
+        <div class="card-status soon"><span class="dot-soon"></span> قريباً</div>
+      </div>
     </div>
 
     <div class="card">
-      <div class="card-icon">&#x1F50D;</div>
-      <h3>COBIT 2019 Foundation</h3>
-      <p class="desc">حوكمة وإدارة تقنية المعلومات المؤسسية</p>
-      <div class="meta"><span>&#x1F6A7; قيد التطوير</span></div>
+      <div class="card-top" style="background:linear-gradient(90deg,var(--accent2),var(--rose))"></div>
+      <div class="card-body">
+        <div class="card-header">
+          <div class="card-icon-wrap purple">&#x1F50D;</div>
+          <div>
+            <h3>COBIT 2019 Foundation</h3>
+            <div class="subtitle">ISACA</div>
+          </div>
+        </div>
+        <p class="desc">حوكمة وإدارة تقنية المعلومات المؤسسية — المبادئ، نظام الحوكمة، الأهداف المتتالية، ومصفوفة RACI.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="tag purple">COBIT 2019</span>
+          <span class="tag amber">Governance</span>
+        </div>
+        <div class="card-status soon"><span class="dot-soon"></span> قريباً</div>
+      </div>
     </div>
 
   </div>
 
 </main>
 
+<!-- Footer -->
 <footer>
-  &copy; 2026 Mustafa Al-Qadi &mdash; All rights reserved
+  <div class="footer-brand">Eng. Mustafa Al-Qadi</div>
+  <div class="footer-role">Enterprise Architecture &amp; Cloud Infrastructure Trainer</div>
+  <div class="footer-links">
+    <a href="https://github.com/mustafamalqadi">GitHub</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Eng. Mustafa Al-Qadi &mdash; All rights reserved</div>
 </footer>
 
 </body>
