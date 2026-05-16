@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="Inter, Arial, sans-serif">
+<rect width="1000" height="520" rx="18" fill="#0f1a24"/>
+<text x="500" y="42" text-anchor="middle" fill="#e8d5b0" font-size="22" font-weight="700">VCF Fleet Design Blueprints</text>
+<rect x="63" y="70" width="165" height="300" rx="12" fill="#1a2a38" stroke="#0d7377" stroke-width="2.5"/>
+<rect x="110" y="100" width="70" height="18" rx="3" fill="#0d7377" opacity="0.6"/>
+<circle cx="170" cy="109" r="4" fill="#0f1a24"/>
+<text x="145" y="200" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Single Site</text>
+<text x="145" y="222" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Minimum</text>
+<text x="145" y="264" text-anchor="middle" fill="#aab" font-size="12">4 hosts</text>
+<text x="145" y="286" text-anchor="middle" fill="#aab" font-size="12">1 domain</text>
+<rect x="130" y="335" width="30" height="8" rx="4" fill="#0d7377" opacity="0.7"/>
+<text x="145" y="357" text-anchor="middle" fill="#667" font-size="9">Complexity</text>
+<rect x="240" y="70" width="165" height="300" rx="12" fill="#1a2a38" stroke="#b8860b" stroke-width="2.5"/>
+<rect x="287" y="100" width="70" height="18" rx="3" fill="#b8860b" opacity="0.6"/>
+<circle cx="347" cy="109" r="4" fill="#0f1a24"/>
+<rect x="287" y="125" width="70" height="18" rx="3" fill="#b8860b" opacity="0.6"/>
+<circle cx="347" cy="134" r="4" fill="#0f1a24"/>
+<text x="322" y="200" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Single Site</text>
+<text x="322" y="222" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Standard</text>
+<text x="322" y="264" text-anchor="middle" fill="#aab" font-size="12">7 hosts</text>
+<text x="322" y="286" text-anchor="middle" fill="#aab" font-size="12">2 domains</text>
+<rect x="295" y="335" width="55" height="8" rx="4" fill="#b8860b" opacity="0.7"/>
+<text x="322" y="357" text-anchor="middle" fill="#667" font-size="9">Complexity</text>
+<rect x="417" y="70" width="165" height="300" rx="12" fill="#1a2a38" stroke="#556b2f" stroke-width="2.5"/>
+<rect x="464" y="100" width="70" height="18" rx="3" fill="#556b2f" opacity="0.6"/>
+<circle cx="524" cy="109" r="4" fill="#0f1a24"/>
+<rect x="464" y="125" width="70" height="18" rx="3" fill="#556b2f" opacity="0.6"/>
+<circle cx="524" cy="134" r="4" fill="#0f1a24"/>
+<rect x="464" y="150" width="70" height="18" rx="3" fill="#556b2f" opacity="0.6"/>
+<circle cx="524" cy="159" r="4" fill="#0f1a24"/>
+<text x="499" y="200" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Multi-Site</text>
+<text x="499" y="222" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">(Stretched)</text>
+<text x="499" y="264" text-anchor="middle" fill="#aab" font-size="12">14+ hosts</text>
+<text x="499" y="286" text-anchor="middle" fill="#aab" font-size="12">2 sites</text>
+<rect x="459" y="335" width="80" height="8" rx="4" fill="#556b2f" opacity="0.7"/>
+<text x="499" y="357" text-anchor="middle" fill="#667" font-size="9">Complexity</text>
+<rect x="594" y="70" width="165" height="300" rx="12" fill="#1a2a38" stroke="#8b3a3a" stroke-width="2.5"/>
+<rect x="641" y="100" width="70" height="18" rx="3" fill="#8b3a3a" opacity="0.6"/>
+<circle cx="701" cy="109" r="4" fill="#0f1a24"/>
+<rect x="641" y="125" width="70" height="18" rx="3" fill="#8b3a3a" opacity="0.6"/>
+<circle cx="701" cy="134" r="4" fill="#0f1a24"/>
+<rect x="641" y="150" width="70" height="18" rx="3" fill="#8b3a3a" opacity="0.6"/>
+<circle cx="701" cy="159" r="4" fill="#0f1a24"/>
+<text x="676" y="200" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Multi-Region</text>
+<text x="676" y="242" text-anchor="middle" fill="#aab" font-size="12">2+ regions</text>
+<text x="676" y="264" text-anchor="middle" fill="#aab" font-size="12">Async DR</text>
+<rect x="624" y="335" width="105" height="8" rx="4" fill="#8b3a3a" opacity="0.7"/>
+<text x="676" y="357" text-anchor="middle" fill="#667" font-size="9">Complexity</text>
+<rect x="771" y="70" width="165" height="300" rx="12" fill="#1a2a38" stroke="#6b3a8b" stroke-width="2.5"/>
+<rect x="818" y="100" width="70" height="18" rx="3" fill="#6b3a8b" opacity="0.6"/>
+<circle cx="878" cy="109" r="4" fill="#0f1a24"/>
+<rect x="818" y="125" width="70" height="18" rx="3" fill="#6b3a8b" opacity="0.6"/>
+<circle cx="878" cy="134" r="4" fill="#0f1a24"/>
+<rect x="818" y="150" width="70" height="18" rx="3" fill="#6b3a8b" opacity="0.6"/>
+<circle cx="878" cy="159" r="4" fill="#0f1a24"/>
+<text x="853" y="200" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Multi-Fleet</text>
+<text x="853" y="242" text-anchor="middle" fill="#aab" font-size="12">2+ fleets</text>
+<text x="853" y="264" text-anchor="middle" fill="#aab" font-size="12">Central Ops</text>
+<rect x="788" y="335" width="130" height="8" rx="4" fill="#6b3a8b" opacity="0.7"/>
+<text x="853" y="357" text-anchor="middle" fill="#667" font-size="9">Complexity</text>
+</svg>

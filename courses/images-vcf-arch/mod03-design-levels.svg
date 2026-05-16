@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="Inter, Arial, sans-serif">
+<rect width="900" height="420" rx="18" fill="#0f1a24"/>
+<text x="450" y="42" text-anchor="middle" fill="#e8d5b0" font-size="22" font-weight="700">مَراحِل التَّصميم الثَّلاث</text>
+<rect x="50" y="75" width="240" height="260" rx="14" fill="#1a2a38" stroke="#0d7377" stroke-width="3"/>
+<text x="170" y="110" text-anchor="middle" fill="#0d7377" font-size="18" font-weight="700">Conceptual</text>
+<text x="170" y="137" text-anchor="middle" fill="#e8d5b0" font-size="14">التَّصميم المَفاهيمي</text>
+<line x1="70" y1="155" x2="270" y2="155" stroke="#0d7377" stroke-width="1" opacity="0.4"/>
+<text x="170" y="185" text-anchor="middle" fill="#aab" font-size="12">المُتَطَلَّبات / القُيود / AMPRS</text>
+<text x="170" y="235" text-anchor="middle" fill="#e8d5b0" font-size="16" font-weight="600">❓ ماذا نُريد؟</text>
+<line x1="295" y1="205" x2="325" y2="205" stroke="#e8d5b0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="330" y="75" width="240" height="260" rx="14" fill="#1a2a38" stroke="#b8860b" stroke-width="3"/>
+<text x="450" y="110" text-anchor="middle" fill="#b8860b" font-size="18" font-weight="700">Logical</text>
+<text x="450" y="137" text-anchor="middle" fill="#e8d5b0" font-size="14">التَّصميم المَنطِقي</text>
+<line x1="350" y1="155" x2="550" y2="155" stroke="#b8860b" stroke-width="1" opacity="0.4"/>
+<text x="450" y="185" text-anchor="middle" fill="#aab" font-size="12">المُكَوِّنات / العَلاقات</text>
+<text x="450" y="235" text-anchor="middle" fill="#e8d5b0" font-size="16" font-weight="600">❓ كَيف يَعمَل؟</text>
+<line x1="575" y1="205" x2="605" y2="205" stroke="#e8d5b0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="610" y="75" width="240" height="260" rx="14" fill="#1a2a38" stroke="#8b3a3a" stroke-width="3"/>
+<text x="730" y="110" text-anchor="middle" fill="#8b3a3a" font-size="18" font-weight="700">Physical</text>
+<text x="730" y="137" text-anchor="middle" fill="#e8d5b0" font-size="14">التَّصميم الفيزيائي</text>
+<line x1="630" y1="155" x2="830" y2="155" stroke="#8b3a3a" stroke-width="1" opacity="0.4"/>
+<text x="730" y="185" text-anchor="middle" fill="#aab" font-size="12">المُنتَجات / الأَجهِزة / التَّكوين</text>
+<text x="730" y="235" text-anchor="middle" fill="#e8d5b0" font-size="16" font-weight="600">❓ كَيف نَبنيه؟</text>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8d5b0"/></marker></defs>
+</svg>

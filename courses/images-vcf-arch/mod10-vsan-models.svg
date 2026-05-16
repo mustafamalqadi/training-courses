@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" font-family="Inter, Arial, sans-serif">
+<rect width="1000" height="480" rx="18" fill="#0f1a24"/>
+<text x="500" y="42" text-anchor="middle" fill="#e8d5b0" font-size="22" font-weight="700">vSAN Storage Models</text>
+<rect x="53" y="70" width="210" height="320" rx="14" fill="#1a2a38" stroke="#0d7377" stroke-width="2.5"/>
+<text x="158" y="120" text-anchor="middle" font-size="36">💾+🖥️</text>
+<text x="158" y="160" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">HCI Mesh</text>
+<text x="158" y="190" text-anchor="middle" fill="#aab" font-size="12">Compute + Storage</text>
+<text x="158" y="212" text-anchor="middle" fill="#aab" font-size="12">مُشتَرَك</text>
+<rect x="73" y="250" width="55" height="55" rx="6" fill="#0d7377" opacity="0.3" stroke="#0d7377" stroke-width="1"/>
+<text x="100" y="275" text-anchor="middle" fill="#e8d5b0" font-size="9">C+S</text>
+<text x="100" y="292" text-anchor="middle" fill="#aab" font-size="8">Host 1</text>
+<rect x="135" y="250" width="55" height="55" rx="6" fill="#0d7377" opacity="0.3" stroke="#0d7377" stroke-width="1"/>
+<text x="162" y="275" text-anchor="middle" fill="#e8d5b0" font-size="9">C+S</text>
+<text x="162" y="292" text-anchor="middle" fill="#aab" font-size="8">Host 2</text>
+<rect x="197" y="250" width="55" height="55" rx="6" fill="#0d7377" opacity="0.3" stroke="#0d7377" stroke-width="1"/>
+<text x="224" y="275" text-anchor="middle" fill="#e8d5b0" font-size="9">C+S</text>
+<text x="224" y="292" text-anchor="middle" fill="#aab" font-size="8">Host 3</text>
+<rect x="281" y="70" width="210" height="320" rx="14" fill="#1a2a38" stroke="#b8860b" stroke-width="2.5"/>
+<text x="386" y="120" text-anchor="middle" font-size="36">🔗</text>
+<text x="386" y="160" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">vSAN Sharing</text>
+<text x="386" y="190" text-anchor="middle" fill="#aab" font-size="12">مُشارَكة بَين</text>
+<text x="386" y="212" text-anchor="middle" fill="#aab" font-size="12">كَتَلات</text>
+<rect x="301" y="250" width="85" height="55" rx="6" fill="#b8860b" opacity="0.3" stroke="#b8860b" stroke-width="1"/>
+<text x="343" y="282" text-anchor="middle" fill="#e8d5b0" font-size="9">Cluster 1</text>
+<rect x="396" y="250" width="85" height="55" rx="6" fill="#b8860b" opacity="0.3" stroke="#b8860b" stroke-width="1"/>
+<text x="438" y="282" text-anchor="middle" fill="#e8d5b0" font-size="9">Cluster 2</text>
+<line x1="386" y1="277" x2="396" y2="277" stroke="#e8d5b0" stroke-width="2"/>
+<rect x="509" y="70" width="210" height="320" rx="14" fill="#1a2a38" stroke="#556b2f" stroke-width="2.5"/>
+<text x="614" y="120" text-anchor="middle" font-size="36">💾</text>
+<text x="614" y="160" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Storage Cluster</text>
+<text x="614" y="190" text-anchor="middle" fill="#aab" font-size="12">تَخزين مُخَصَّص</text>
+<text x="614" y="212" text-anchor="middle" fill="#aab" font-size="12">(Disaggregated)</text>
+<rect x="524" y="250" width="85" height="55" rx="6" fill="#556b2f" opacity="0.3" stroke="#556b2f" stroke-width="1"/>
+<text x="566" y="282" text-anchor="middle" fill="#e8d5b0" font-size="9">Compute</text>
+<rect x="619" y="250" width="85" height="55" rx="6" fill="#556b2f" opacity="0.5" stroke="#556b2f" stroke-width="1"/>
+<text x="661" y="282" text-anchor="middle" fill="#e8d5b0" font-size="9">Storage</text>
+<rect x="737" y="70" width="210" height="320" rx="14" fill="#1a2a38" stroke="#8b3a3a" stroke-width="2.5"/>
+<text x="842" y="120" text-anchor="middle" font-size="36">🌐</text>
+<text x="842" y="160" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Stretched</text>
+<text x="842" y="190" text-anchor="middle" fill="#aab" font-size="12">مَوقِعَين</text>
+<text x="842" y="212" text-anchor="middle" fill="#aab" font-size="12">RTT ≤ 5ms</text>
+<rect x="757" y="250" width="85" height="55" rx="6" fill="#8b3a3a" opacity="0.3" stroke="#8b3a3a" stroke-width="1"/>
+<text x="799" y="275" text-anchor="middle" fill="#e8d5b0" font-size="9">Site 1</text>
+<text x="799" y="292" text-anchor="middle" fill="#aab" font-size="8">≤5ms RTT</text>
+<rect x="852" y="250" width="85" height="55" rx="6" fill="#8b3a3a" opacity="0.3" stroke="#8b3a3a" stroke-width="1"/>
+<text x="894" y="275" text-anchor="middle" fill="#e8d5b0" font-size="9">Site 2</text>
+<text x="894" y="292" text-anchor="middle" fill="#aab" font-size="8">≤5ms RTT</text>
+</svg>

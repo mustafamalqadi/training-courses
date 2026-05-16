@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="Inter, Arial, sans-serif">
+<rect width="1000" height="520" rx="18" fill="#0f1a24"/>
+<text x="500" y="42" text-anchor="middle" fill="#e8d5b0" font-size="22" font-weight="700">VMware Live Recovery — Architecture</text>
+<rect x="40" y="80" width="280" height="380" rx="14" fill="#1a2a38" stroke="#0d7377" stroke-width="2"/>
+<text x="180" y="110" text-anchor="middle" fill="#0d7377" font-size="16" font-weight="700">🏢 Production Site</text>
+<rect x="60" y="135" width="240" height="40" rx="8" fill="#0f1a24" stroke="#0d7377" stroke-width="1"/>
+<text x="180" y="160" text-anchor="middle" fill="#e8d5b0" font-size="12">VCF Instance</text>
+<rect x="60" y="190" width="240" height="40" rx="8" fill="#0f1a24" stroke="#0d7377" stroke-width="1"/>
+<text x="180" y="215" text-anchor="middle" fill="#e8d5b0" font-size="12">vSphere Replication</text>
+<rect x="60" y="245" width="240" height="40" rx="8" fill="#0f1a24" stroke="#0d7377" stroke-width="1"/>
+<text x="180" y="270" text-anchor="middle" fill="#e8d5b0" font-size="12">Site Recovery Manager</text>
+<rect x="60" y="300" width="240" height="40" rx="8" fill="#0f1a24" stroke="#0d7377" stroke-width="1"/>
+<text x="180" y="325" text-anchor="middle" fill="#e8d5b0" font-size="12">vSAN Stretched Cluster</text>
+<rect x="420" y="80" width="260" height="240" rx="14" fill="#1a2a38" stroke="#b8860b" stroke-width="2"/>
+<text x="550" y="110" text-anchor="middle" fill="#b8860b" font-size="16" font-weight="700">🔄 DR Site</text>
+<rect x="440" y="135" width="220" height="40" rx="8" fill="#0f1a24" stroke="#b8860b" stroke-width="1"/>
+<text x="550" y="160" text-anchor="middle" fill="#e8d5b0" font-size="12">Live Recovery DR</text>
+<rect x="440" y="190" width="220" height="40" rx="8" fill="#0f1a24" stroke="#b8860b" stroke-width="1"/>
+<text x="550" y="215" text-anchor="middle" fill="#e8d5b0" font-size="12">Async Replication</text>
+<rect x="440" y="245" width="220" height="40" rx="8" fill="#0f1a24" stroke="#b8860b" stroke-width="1"/>
+<text x="550" y="270" text-anchor="middle" fill="#e8d5b0" font-size="12">Orchestrated Failover</text>
+<rect x="420" y="340" width="260" height="120" rx="14" fill="#1a2a38" stroke="#8b3a3a" stroke-width="2"/>
+<text x="550" y="370" text-anchor="middle" fill="#8b3a3a" font-size="16" font-weight="700">🛡️ Cyber Recovery</text>
+<rect x="440" y="390" width="220" height="40" rx="8" fill="#0f1a24" stroke="#8b3a3a" stroke-width="1"/>
+<text x="550" y="415" text-anchor="middle" fill="#e8d5b0" font-size="12">IRE + Behavioral Analysis</text>
+<rect x="730" y="140" width="220" height="50" rx="8" fill="#0d7377" opacity="0.2"/>
+<text x="840" y="170" text-anchor="middle" fill="#0d7377" font-size="13" font-weight="600">Stretched: RPO ≈ 0</text>
+<rect x="730" y="210" width="220" height="50" rx="8" fill="#b8860b" opacity="0.2"/>
+<text x="840" y="240" text-anchor="middle" fill="#b8860b" font-size="13" font-weight="600">DR: RPO 5min–24h</text>
+<rect x="730" y="280" width="220" height="50" rx="8" fill="#8b3a3a" opacity="0.2"/>
+<text x="840" y="310" text-anchor="middle" fill="#8b3a3a" font-size="13" font-weight="600">Cyber: Air-Gapped IRE</text>
+<line x1="320" y1="200" x2="420" y2="200" stroke="#b8860b" stroke-width="2" marker-end="url(#ar2)"/>
+<line x1="320" y1="400" x2="420" y2="400" stroke="#8b3a3a" stroke-width="2" marker-end="url(#ar2)"/>
+<defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8d5b0"/></marker></defs>
+</svg>

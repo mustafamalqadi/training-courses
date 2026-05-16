@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" font-family="Inter, Arial, sans-serif">
+<rect width="1100" height="520" rx="18" fill="#0f1a24"/>
+<text x="550" y="45" text-anchor="middle" fill="#e8d5b0" font-size="22" font-weight="700">VCF 9.0 Architecture — Course Roadmap</text>
+<rect x="60" y="75" width="230" height="70" rx="10" fill="#0d7377" opacity="0.85"/>
+<text x="175" y="103" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 00</text>
+<text x="175" y="125" text-anchor="middle" fill="#e8d5b0" font-size="12">مُقَدِّمة الدَّورة</text>
+<rect x="310" y="75" width="230" height="70" rx="10" fill="#0d7377" opacity="0.85"/>
+<text x="425" y="103" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 01</text>
+<text x="425" y="125" text-anchor="middle" fill="#e8d5b0" font-size="12">أُطُر التَّصميم</text>
+<rect x="560" y="75" width="230" height="70" rx="10" fill="#0d7377" opacity="0.85"/>
+<text x="675" y="103" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 02</text>
+<text x="675" y="125" text-anchor="middle" fill="#e8d5b0" font-size="12">القُدُرات والسَّحابة</text>
+<rect x="810" y="75" width="230" height="70" rx="10" fill="#0d7377" opacity="0.85"/>
+<text x="925" y="103" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 03</text>
+<text x="925" y="125" text-anchor="middle" fill="#e8d5b0" font-size="12">مَنهَجيّة التَّصميم</text>
+<rect x="60" y="161" width="230" height="70" rx="10" fill="#b8860b" opacity="0.85"/>
+<text x="175" y="189" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 04</text>
+<text x="175" y="211" text-anchor="middle" fill="#e8d5b0" font-size="12">السَّحابة الخاصّة</text>
+<rect x="310" y="161" width="230" height="70" rx="10" fill="#b8860b" opacity="0.85"/>
+<text x="425" y="189" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 05</text>
+<text x="425" y="211" text-anchor="middle" fill="#e8d5b0" font-size="12">رِحلة FSA</text>
+<rect x="560" y="161" width="230" height="70" rx="10" fill="#b8860b" opacity="0.85"/>
+<text x="675" y="189" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 06</text>
+<text x="675" y="211" text-anchor="middle" fill="#e8d5b0" font-size="12">النُّضج والتَّحَوُّل</text>
+<rect x="810" y="161" width="230" height="70" rx="10" fill="#8b3a3a" opacity="0.85"/>
+<text x="925" y="189" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 07</text>
+<text x="925" y="211" text-anchor="middle" fill="#e8d5b0" font-size="12">بنية VCF 9</text>
+<rect x="60" y="247" width="230" height="70" rx="10" fill="#8b3a3a" opacity="0.85"/>
+<text x="175" y="275" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 08</text>
+<text x="175" y="297" text-anchor="middle" fill="#e8d5b0" font-size="12">الحِماية والاستِعادة</text>
+<rect x="310" y="247" width="230" height="70" rx="10" fill="#8b3a3a" opacity="0.85"/>
+<text x="425" y="275" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 09</text>
+<text x="425" y="297" text-anchor="middle" fill="#e8d5b0" font-size="12">المَخاطِط والطُّبولوجيّات</text>
+<rect x="560" y="247" width="230" height="70" rx="10" fill="#556b2f" opacity="0.85"/>
+<text x="675" y="275" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 10</text>
+<text x="675" y="297" text-anchor="middle" fill="#e8d5b0" font-size="12">الشَّبَكات والتَّخزين</text>
+<rect x="810" y="247" width="230" height="70" rx="10" fill="#556b2f" opacity="0.85"/>
+<text x="925" y="275" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module 11</text>
+<text x="925" y="297" text-anchor="middle" fill="#e8d5b0" font-size="12">إِطار AMPRS</text>
+<rect x="60" y="333" width="230" height="70" rx="10" fill="#6b3a8b" opacity="0.85"/>
+<text x="175" y="361" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Module TK</text>
+<text x="175" y="383" text-anchor="middle" fill="#e8d5b0" font-size="12">دِراسة Rainpole</text>
+<rect x="60" y="429" width="16" height="16" rx="3" fill="#0d7377"/>
+<text x="82" y="442" fill="#aab" font-size="12">الأُسُس والأُطُر</text>
+<rect x="250" y="429" width="16" height="16" rx="3" fill="#b8860b"/>
+<text x="272" y="442" fill="#aab" font-size="12">الاستراتيجيّة</text>
+<rect x="440" y="429" width="16" height="16" rx="3" fill="#8b3a3a"/>
+<text x="462" y="442" fill="#aab" font-size="12">البنية التقنيّة</text>
+<rect x="630" y="429" width="16" height="16" rx="3" fill="#556b2f"/>
+<text x="652" y="442" fill="#aab" font-size="12">التصميم المتقدّم</text>
+<rect x="820" y="429" width="16" height="16" rx="3" fill="#6b3a8b"/>
+<text x="842" y="442" fill="#aab" font-size="12">دراسة حالة</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="Inter, Arial, sans-serif">
+<rect width="1000" height="400" rx="18" fill="#0f1a24"/>
+<text x="500" y="42" text-anchor="middle" fill="#e8d5b0" font-size="22" font-weight="700">Future State Architect — Journey</text>
+<rect x="65" y="75" width="195" height="240" rx="14" fill="#1a2a38" stroke="#0d7377" stroke-width="3"/>
+<circle cx="162" cy="110" r="22" fill="#0d7377"/>
+<text x="162" y="116" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">1</text>
+<text x="162" y="155" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Discovery</text>
+<text x="162" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">الاكتِشاف</text>
+<text x="162" y="215" text-anchor="middle" fill="#aab" font-size="12">فَهم البيئة</text>
+<text x="162" y="237" text-anchor="middle" fill="#aab" font-size="12">والأَعمال</text>
+<line x1="262" y1="195" x2="288" y2="195" stroke="#e8d5b0" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="290" y="75" width="195" height="240" rx="14" fill="#1a2a38" stroke="#b8860b" stroke-width="3"/>
+<circle cx="387" cy="110" r="22" fill="#b8860b"/>
+<text x="387" y="116" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">2</text>
+<text x="387" y="155" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Assessment</text>
+<text x="387" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">التَّقييم</text>
+<text x="387" y="215" text-anchor="middle" fill="#aab" font-size="12">CMI + فَجَوات</text>
+<text x="387" y="237" text-anchor="middle" fill="#aab" font-size="12">النُّضج</text>
+<line x1="487" y1="195" x2="513" y2="195" stroke="#e8d5b0" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="515" y="75" width="195" height="240" rx="14" fill="#1a2a38" stroke="#556b2f" stroke-width="3"/>
+<circle cx="612" cy="110" r="22" fill="#556b2f"/>
+<text x="612" y="116" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">3</text>
+<text x="612" y="155" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Target State</text>
+<text x="612" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">الحالة المُستَهدَفة</text>
+<text x="612" y="215" text-anchor="middle" fill="#aab" font-size="12">التَّصميم</text>
+<text x="612" y="237" text-anchor="middle" fill="#aab" font-size="12">والأَهداف</text>
+<line x1="712" y1="195" x2="738" y2="195" stroke="#e8d5b0" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="740" y="75" width="195" height="240" rx="14" fill="#1a2a38" stroke="#8b3a3a" stroke-width="3"/>
+<circle cx="837" cy="110" r="22" fill="#8b3a3a"/>
+<text x="837" y="116" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">4</text>
+<text x="837" y="155" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Workstreams</text>
+<text x="837" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">مَسارات العَمَل</text>
+<text x="837" y="215" text-anchor="middle" fill="#aab" font-size="12">التَّنفيذ</text>
+<text x="837" y="237" text-anchor="middle" fill="#aab" font-size="12">والقِياس</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8d5b0"/></marker></defs>
+</svg>

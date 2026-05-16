@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="Inter, Arial, sans-serif">
+<rect width="900" height="500" rx="18" fill="#0f1a24"/>
+<text x="450" y="42" text-anchor="middle" fill="#e8d5b0" font-size="22" font-weight="700">AMPRS — Design Quality Framework</text>
+<rect x="38" y="420" width="823" height="40" rx="8" fill="#1a2a38" stroke="#e8d5b0" stroke-width="1"/>
+<text x="450" y="446" text-anchor="middle" fill="#e8d5b0" font-size="14" font-weight="600">VCF 9 Design Quality Pillars</text>
+<rect x="38" y="70" width="155" height="340" rx="12" fill="#1a2a38" stroke="#0d7377" stroke-width="2.5"/>
+<text x="115" y="125" text-anchor="middle" fill="#0d7377" font-size="42" font-weight="900">A</text>
+<text x="115" y="155" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Availability</text>
+<text x="115" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">التَّوَفُّر</text>
+<line x1="53" y1="190" x2="178" y2="190" stroke="#0d7377" stroke-width="1" opacity="0.4"/>
+<text x="115" y="220" text-anchor="middle" fill="#aab" font-size="11">HA, FT, Stretched</text>
+<text x="115" y="242" text-anchor="middle" fill="#aab" font-size="11">N+1, N+2</text>
+<rect x="205" y="70" width="155" height="340" rx="12" fill="#1a2a38" stroke="#b8860b" stroke-width="2.5"/>
+<text x="282" y="125" text-anchor="middle" fill="#b8860b" font-size="42" font-weight="900">M</text>
+<text x="282" y="155" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Manageability</text>
+<text x="282" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">الإِدارة</text>
+<line x1="220" y1="190" x2="345" y2="190" stroke="#b8860b" stroke-width="1" opacity="0.4"/>
+<text x="282" y="220" text-anchor="middle" fill="#aab" font-size="11">LCM, Monitoring</text>
+<text x="282" y="242" text-anchor="middle" fill="#aab" font-size="11">Compliance</text>
+<rect x="372" y="70" width="155" height="340" rx="12" fill="#1a2a38" stroke="#556b2f" stroke-width="2.5"/>
+<text x="449" y="125" text-anchor="middle" fill="#556b2f" font-size="42" font-weight="900">P</text>
+<text x="449" y="155" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Performance</text>
+<text x="449" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">الأَداء</text>
+<line x1="387" y1="190" x2="512" y2="190" stroke="#556b2f" stroke-width="1" opacity="0.4"/>
+<text x="449" y="220" text-anchor="middle" fill="#aab" font-size="11">NUMA, NIOC</text>
+<text x="449" y="242" text-anchor="middle" fill="#aab" font-size="11">Sizing, QoS</text>
+<rect x="539" y="70" width="155" height="340" rx="12" fill="#1a2a38" stroke="#8b3a3a" stroke-width="2.5"/>
+<text x="616" y="125" text-anchor="middle" fill="#8b3a3a" font-size="42" font-weight="900">R</text>
+<text x="616" y="155" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Recoverability</text>
+<text x="616" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">الاستِعادة</text>
+<line x1="554" y1="190" x2="679" y2="190" stroke="#8b3a3a" stroke-width="1" opacity="0.4"/>
+<text x="616" y="220" text-anchor="middle" fill="#aab" font-size="11">RPO/RTO, DR</text>
+<text x="616" y="242" text-anchor="middle" fill="#aab" font-size="11">Cyber Recovery</text>
+<rect x="706" y="70" width="155" height="340" rx="12" fill="#1a2a38" stroke="#6b3a8b" stroke-width="2.5"/>
+<text x="783" y="125" text-anchor="middle" fill="#6b3a8b" font-size="42" font-weight="900">S</text>
+<text x="783" y="155" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Security</text>
+<text x="783" y="177" text-anchor="middle" fill="#e8d5b0" font-size="13">الأَمان</text>
+<line x1="721" y1="190" x2="846" y2="190" stroke="#6b3a8b" stroke-width="1" opacity="0.4"/>
+<text x="783" y="220" text-anchor="middle" fill="#aab" font-size="11">DFW, Encryption</text>
+<text x="783" y="242" text-anchor="middle" fill="#aab" font-size="11">RBAC, Zero Trust</text>
+</svg>
