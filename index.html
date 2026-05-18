@@ -59,7 +59,10 @@ a{text-decoration:none;color:inherit}
 @keyframes logo-shine{0%,100%{transform:translateX(-100%) rotate(25deg)}50%{transform:translateX(100%) rotate(25deg)}}
 .topbar-name{font-weight:700;font-size:.95rem;color:var(--text)}
 .topbar-title{font-size:.72rem;color:var(--muted);font-weight:400}
-.topbar-stats{display:flex;gap:1rem}
+.topbar-stats{display:flex;gap:1rem;align-items:center}
+.topbar-links{display:flex;gap:.85rem;align-items:center;margin-left:.5rem;padding-left:1rem;border-left:1px solid rgba(255,255,255,.08)}
+.topbar-links a{color:var(--muted);text-decoration:none;font-size:.75rem;font-weight:500;transition:color .2s}
+.topbar-links a:hover{color:var(--accent)}
 .stat{text-align:center;padding:.35rem .9rem;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);transition:all .3s}
 .stat:hover{background:rgba(59,130,246,.06);border-color:rgba(59,130,246,.12)}
 .stat-num{font-size:1.15rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:'Inter',sans-serif}
@@ -212,7 +215,8 @@ footer{position:relative;z-index:1;margin-top:5rem;padding:0 2rem 2.5rem;text-al
   .hero-chips{gap:.5rem}
   .grid{grid-template-columns:1fr}
   .topbar{flex-direction:column;gap:.6rem;text-align:center;padding:.8rem 1rem}
-  .topbar-stats{gap:.6rem}
+  .topbar-stats{gap:.6rem;flex-wrap:wrap;justify-content:center}
+  .topbar-links{border-left:none;padding-left:0;margin-left:0;border-top:1px solid rgba(255,255,255,.08);padding-top:.4rem;margin-top:.2rem;width:100%;justify-content:center}
   .stat{padding:.3rem .6rem}
   .container{padding:2rem 1rem}
   .cta{margin:2.5rem 1rem 0;padding:2rem 1.5rem}
@@ -240,6 +244,11 @@ footer{position:relative;z-index:1;margin-top:5rem;padding:0 2rem 2.5rem;text-al
     <div class="stat"><div class="stat-num" data-target="8">0</div><div class="stat-label">Courses Live</div></div>
     <div class="stat"><div class="stat-num" data-target="115">0</div><div class="stat-label">Modules</div></div>
     <div class="stat"><div class="stat-num" data-target="583">0</div><div class="stat-label">MCQs</div></div>
+    <div class="topbar-links">
+      <a href="https://mustafamalqadi.github.io/vmware-kbs/" target="_blank" rel="noopener">KB Portal</a>
+      <a href="https://mustafamalqadi.github.io/vmware-upgrade-path/" target="_blank" rel="noopener">Upgrade Planner</a>
+      <a href="https://mustafamalqadi.github.io/" target="_blank" rel="noopener">Home</a>
+    </div>
   </div>
 </nav>
 
