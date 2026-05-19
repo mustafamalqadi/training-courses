@@ -90,12 +90,26 @@ a{text-decoration:none;color:inherit}
 .topbar-links a{color:var(--muted);text-decoration:none;font-size:.75rem;font-weight:500;transition:color .2s}
 .topbar-links a:hover{color:var(--accent)}
 .topbar-links a.active{color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:2px}
+/* Dropdown menus */
+.topbar-dropdown{position:relative}
+.topbar-dropdown>button{background:none;border:none;color:var(--muted);font-size:.75rem;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:.3rem;padding:0;font-family:inherit;transition:color .2s}
+.topbar-dropdown>button:hover,.topbar-dropdown:hover>button{color:var(--accent)}
+.topbar-dropdown>button svg{width:10px;height:10px;transition:transform .2s}
+.topbar-dropdown:hover>button svg{transform:rotate(180deg)}
+.topbar-dd{position:absolute;top:calc(100% + .6rem);right:0;background:var(--bg2,#0d1225);border:1px solid var(--border);border-radius:10px;padding:.4rem;min-width:220px;box-shadow:0 12px 40px rgba(0,0,0,.5);opacity:0;visibility:hidden;transform:translateY(-6px);transition:all .2s;z-index:200}
+.topbar-dropdown:hover .topbar-dd{opacity:1;visibility:visible;transform:none}
+.topbar-dd a{display:block;padding:.5rem .75rem;border-radius:6px;color:var(--text2,#c8d0e0);text-decoration:none;font-size:.72rem;font-weight:500;transition:all .15s;white-space:nowrap}
+.topbar-dd a:hover{background:rgba(59,130,246,.08);color:var(--accent)}
+.topbar-dd .dd-label{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding:.3rem .75rem .2rem;font-weight:600}
 .theme-toggle{background:rgba(17,24,39,.4);border:1px solid var(--border);border-radius:8px;padding:.4rem .55rem;cursor:pointer;color:var(--muted);font-size:1rem;line-height:1;transition:all .25s;display:flex;align-items:center;justify-content:center}
 .theme-toggle:hover{color:var(--accent);border-color:rgba(59,130,246,.3);transform:rotate(15deg)}
 [data-theme="light"]{--bg:#ffffff;--bg2:#f6f8fa;--surface:rgba(255,255,255,.8);--surface2:#f3f4f6;--border:#e5e7eb;--border-hover:#2563eb;--text:#1f2937;--text2:#4b5563;--muted:#6b7280;--accent:#2563eb;--accent2:#7c3aed;--accent3:#0891b2;--green:#16a34a;--amber:#ca8a04;--rose:#dc2626;--glow:rgba(37,99,235,.08);--glow2:rgba(124,58,237,.05)}
 [data-theme="light"] .site-strip{background:rgba(246,248,250,.92);border-bottom-color:var(--border)}
 [data-theme="light"] .site-strip a.current{color:var(--accent);background:rgba(37,99,235,.06);border-color:rgba(37,99,235,.15)}
 [data-theme="light"] .topbar{background:rgba(255,255,255,.85)}
+[data-theme="light"] .topbar-dd{background:#fff;border-color:#e5e7eb;box-shadow:0 12px 40px rgba(0,0,0,.1)}
+[data-theme="light"] .topbar-dd a{color:#374151}
+[data-theme="light"] .topbar-dd a:hover{background:rgba(37,99,235,.06);color:#2563eb}
 [data-theme="light"] .scroll-progress{background:linear-gradient(90deg,#2563eb,#7c3aed,#0891b2)}
 .stat{text-align:center;padding:.35rem .9rem;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);transition:all .3s}
 .stat:hover{background:rgba(59,130,246,.06);border-color:rgba(59,130,246,.12)}
@@ -342,9 +356,26 @@ footer{position:relative;z-index:1;margin-top:5rem;padding:0 2rem 2.5rem;text-al
     </div>
   </div>
   <div class="topbar-links">
-    <a href="#" class="active" aria-current="page">Courses</a>
-    <a href="https://mustafamalqadi.github.io/vmware-kbs/" target="_blank" rel="noopener noreferrer">KB Portal</a>
-    <a href="https://mustafamalqadi.github.io/vmware-upgrade-path/" target="_blank" rel="noopener noreferrer">Upgrade Planner</a>
+    <div class="topbar-dropdown">
+      <button>Enterprise Architect <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="topbar-dd">
+        <div class="dd-label">EA &amp; Governance</div>
+        <a href="courses/TOGAF-EA-Foundation-Instructor-Course.html">TOGAF EA Foundation</a>
+        <a href="courses/COBIT-2019-Foundation-Instructor-Course.html">COBIT 2019 Foundation</a>
+        <a href="courses/IASA-CITA-F-Instructor-Course.html">IASA CITA-Foundation (BTABoK)</a>
+      </div>
+    </div>
+    <div class="topbar-dropdown">
+      <button>VCF Courses <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="topbar-dd">
+        <div class="dd-label">VMware Cloud Foundation 9</div>
+        <a href="courses/VCF9-Introduction-Instructor-Course.html">VCF 9 — Introduction</a>
+        <a href="courses/VCF9-Compute-Fundamentals-Instructor-Course-v2.html">VCF 9 — Compute Fundamentals</a>
+        <a href="courses/VCF9-Storage-Fundamentals-Instructor-Course-v2.html">VCF 9 — Storage Fundamentals</a>
+        <a href="courses/VCF9-Network-Fundamentals-Instructor-Course-v2.html">VCF 9 — Network Fundamentals</a>
+        <a href="courses/VCF9-Architecture-Instructor-Course.html">VCF 9 — Solution Architecture</a>
+      </div>
+    </div>
     <a href="https://mustafamalqadi.github.io/" target="_blank" rel="noopener noreferrer">Home</a>
     <button class="theme-toggle" id="themeToggle" title="Toggle light/dark theme" aria-label="Toggle theme">&#127769;</button>
   </div>
