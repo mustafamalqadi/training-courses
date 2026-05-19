@@ -2,6 +2,8 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8"/>
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Eng. Mustafa Al-Qadi — Professional Training Courses</title>
 <meta name="description" content="دورات تدريبية احترافية باللغة العربية — Enterprise Architecture, Cloud Infrastructure, IT Governance"/>
@@ -12,6 +14,9 @@
 <meta property="og:image" content="https://mustafamalqadi.github.io/training-courses/og-image.png"/>
 <meta name="theme-color" content="#090d1a"/>
 <link rel="manifest" href="manifest.json">
+<link rel="canonical" href="https://mustafamalqadi.github.io/training-courses/">
+<link rel="alternate" hreflang="ar" href="https://mustafamalqadi.github.io/training-courses/">
+<link rel="alternate" hreflang="en" href="https://mustafamalqadi.github.io/training-courses/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%233b82f6'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>MA</text></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -306,6 +311,8 @@ footer{position:relative;z-index:1;margin-top:5rem;padding:0 2rem 2.5rem;text-al
 .cmd-item svg{width:16px;height:16px;opacity:.6;flex-shrink:0}
 .cmd-item .cmd-label{flex:1}
 .cmd-item .cmd-hint{font-size:.7rem;color:var(--muted,#6b7a99)}
+.offline-bar{position:fixed;top:0;left:0;right:0;background:#f59e0b;color:#000;text-align:center;padding:.4rem;font-size:.75rem;font-weight:600;z-index:10000;transform:translateY(-100%);transition:transform .3s}
+.offline-bar.show{transform:none}
 </style>
 </head>
 <body>
@@ -733,6 +740,8 @@ footer{position:relative;z-index:1;margin-top:5rem;padding:0 2rem 2.5rem;text-al
 <script>
 (function(){var items=[{label:'Portfolio',url:'https://mustafamalqadi.github.io/',hint:'Home'},{label:'Knowledge Bases',url:'https://mustafamalqadi.github.io/vmware-kbs/',hint:'KB Hub'},{label:'Training Courses',url:'#',hint:'Current page'},{label:'Upgrade Planner',url:'https://mustafamalqadi.github.io/vmware-upgrade-path/',hint:'VMware tool'},{label:'License Calculator',url:'https://mustafamalqadi.github.io/vcf-license-calculator/',hint:'VCF cost'}];var overlay=document.getElementById('cmdOverlay'),input=document.getElementById('cmdInput'),results=document.getElementById('cmdResults');var activeIdx=-1;function open(){overlay.classList.add('open');input.value='';render('');input.focus();activeIdx=-1;}function close(){overlay.classList.remove('open');}function render(q){var f=items.filter(function(i){return!q||i.label.toLowerCase().indexOf(q)!==-1;});results.innerHTML=f.map(function(i,idx){return'<div class="cmd-item'+(idx===activeIdx?' active':'')+'" data-url="'+i.url+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/></svg><span class="cmd-label">'+i.label+'</span><span class="cmd-hint">'+i.hint+'</span></div>';}).join('');}input.addEventListener('input',function(){activeIdx=-1;render(this.value.toLowerCase().trim());});results.addEventListener('click',function(e){var el=e.target.closest('.cmd-item');if(el){close();window.location.href=el.dataset.url;}});overlay.addEventListener('click',function(e){if(e.target===overlay)close();});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();overlay.classList.contains('open')?close():open();}if(e.key==='Escape'&&overlay.classList.contains('open'))close();if(overlay.classList.contains('open')&&(e.key==='ArrowDown'||e.key==='ArrowUp')){e.preventDefault();var els=results.querySelectorAll('.cmd-item');if(e.key==='ArrowDown')activeIdx=Math.min(activeIdx+1,els.length-1);else activeIdx=Math.max(activeIdx-1,0);els.forEach(function(el,i){el.classList.toggle('active',i===activeIdx);});}if(e.key==='Enter'&&overlay.classList.contains('open')){var a=results.querySelector('.cmd-item.active');if(a){close();window.location.href=a.dataset.url;}}});})();
 </script>
+<div class="offline-bar" id="offlineBar">You are offline — cached content is being shown</div>
+<script>(function(){var bar=document.getElementById('offlineBar');window.addEventListener('offline',function(){bar.classList.add('show');});window.addEventListener('online',function(){bar.classList.remove('show');});if(!navigator.onLine)bar.classList.add('show');})();</script>
 <script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
 <script>if(document.startViewTransition){
   document.querySelectorAll('.site-strip a:not(.current)').forEach(function(a){
